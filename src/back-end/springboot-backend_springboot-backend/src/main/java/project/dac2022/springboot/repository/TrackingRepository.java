@@ -8,5 +8,5 @@ import project.dac2022.springboot.model.Tracking;
 public interface TrackingRepository extends JpaRepository<Tracking, Long> {
 
 	@Query(value="SELECT * from tracking where trackingID = ?",nativeQuery = true)
-	Tracking findByTrackingID(String trackingid);
+	Tracking findByTrackingID(int trackingid);
 }

@@ -24,7 +24,7 @@ public class TrackingService {
 		Tracking track = T_R.findByTrackingID(tr.getTrackingID());
 		
 		
-		if(track.getTrackingID().equalsIgnoreCase(tr.getTrackingID()))
+		if(track.getTrackingID()==tr.getTrackingID())
 			return new ResponseEntity<Tracking>(track, HttpStatus.OK);
 		
 		

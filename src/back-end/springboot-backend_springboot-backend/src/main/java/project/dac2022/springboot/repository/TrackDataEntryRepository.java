@@ -9,7 +9,7 @@ public interface TrackDataEntryRepository extends JpaRepository<Tracking, Long>{
 
 	
 	@Query(value="SELECT * from tracking where trackingid = ?",nativeQuery = true)
-	Tracking findByTrackingID(String trackingid);
+	Tracking findByTrackingID(int trackingid);
 
 	
 }
