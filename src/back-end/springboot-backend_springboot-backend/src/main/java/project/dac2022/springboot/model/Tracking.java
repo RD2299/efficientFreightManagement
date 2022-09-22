@@ -21,7 +21,7 @@ public class Tracking {
 	private long tID;
 	
 	@Column(name="trackingID",nullable=false)
-	private String trackingID;
+	private int trackingID;
 	
 	@Column(name="checkpoint",nullable=false)
 	private String checkpoint;
@@ -43,11 +43,11 @@ public class Tracking {
 		this.tID = tID;
 	}
 
-	public String getTrackingID() {
+	public int getTrackingID() {
 		return trackingID;
 	}
 
-	public void setTrackingID(String trackingID) {
+	public void setTrackingID(int trackingID) {
 		this.trackingID = trackingID;
 	}
 
@@ -67,7 +67,7 @@ public class Tracking {
 		this.time_stamp = time_stamp;
 	}
 
-	Tracking(long tID, String trackingID, String checkpoint, String time_stamp) {
+	Tracking(long tID, int trackingID, String checkpoint, String time_stamp) {
 		super();
 		this.tID = tID;
 		this.trackingID = trackingID;
